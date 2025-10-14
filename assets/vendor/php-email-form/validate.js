@@ -4,6 +4,26 @@
 * Author: BootstrapMade.com
 */
 (function () {
+
+  const form = document.getElementById('contact-form');
+  const successMessage = document.getElementById('success-message');
+  
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault(); // evita recarga inmediata
+
+    const formData = new FormData(form);
+    await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    // mostrar mensaje de éxito
+    successMessage.style.display = 'block';
+    form.reset();
+  });
+
+/*
   "use strict";
 
   let forms = document.querySelectorAll('.php-email-form');
@@ -81,5 +101,5 @@
     thisForm.querySelector('.error-message').innerHTML = error;
     thisForm.querySelector('.error-message').classList.add('d-block');
   }
-
+*/
 })();
