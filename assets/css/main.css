@@ -854,9 +854,10 @@ section,
 }
 
 .portfolio .portfolio-content .portfolio-info .preview-link,
-.portfolio .portfolio-content .portfolio-info .details-link {
+.portfolio .portfolio-content .portfolio-info .details-link,
+.portfolio .portfolio-content .portfolio-info .details-repository {
   position: absolute;
-  left: calc(50% - 40px);
+  left: calc(50% - 60px);
   font-size: 26px;
   top: calc(50% - 14px);
   color: #fff;
@@ -865,13 +866,19 @@ section,
 }
 
 .portfolio .portfolio-content .portfolio-info .preview-link:hover,
-.portfolio .portfolio-content .portfolio-info .details-link:hover {
+.portfolio .portfolio-content .portfolio-info .details-link:hover,
+.portfolio .portfolio-content .portfolio-info .details-repository:hover {
   color: var(--accent-color);
 }
 
 .portfolio .portfolio-content .portfolio-info .details-link {
-  left: 50%;
+  left: 45%;
   font-size: 34px;
+  line-height: 0;
+}
+.portfolio .portfolio-content .portfolio-info .details-repository {
+  left: 55%;
+  font-size: 30px;
   line-height: 0;
 }
 
