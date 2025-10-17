@@ -1274,6 +1274,9 @@ section,
 # Starter Section Section
 --------------------------------------------------------------*/
 
+  .ubicacion{
+    text-align: center;
+  }
 
 iframe{
   max-width: 400px;
